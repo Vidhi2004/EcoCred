@@ -1,0 +1,714 @@
+/* response */
+html{
+    font-size: 9px;
+}
+
+
+@media only screen and (min-width:1200px) {
+    .secItem.sec-intro .slideBox .introSwiper .object{
+        height: 80vh;
+    }
+    .secItem.sec-intro .topBox .textLayer {
+        /* width: fit-content;
+        display: block;
+        margin: 0 auto; */
+    }
+    .secItem.sec-intro .slideBox .introSwiper .object{
+        width: 80vh;
+    }
+}
+@media only screen and (min-width:930px) {
+        
+    .fullpage-wrapper{
+        height: fit-content !important;
+    }
+    .fullpage-wrapper .fp-section{
+
+        width: 100%!important;
+        position: absolute;
+        left: 0;
+        top: 0;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 0;
+        transition: all .7s ease-in-out;
+        height: fit-content;
+    }
+    .fullpage-wrapper	.fp-section.active {
+          visibility: visible;
+          opacity: 1;
+          z-index: 1;
+      }
+      
+
+}
+@media only screen and (max-width:1200px) {
+
+
+    footer .wrap.type-flex.infoBox{
+        
+        flex-direction: column;
+        align-items: baseline;
+    }
+    footer .wrap.type-flex.infoBox .sideBox {
+        margin-top: 10px;
+    }
+
+
+
+    
+}
+
+
+@media only screen and (max-width:930px) {
+    html {
+        font-size: 9px;
+    }
+    .secItem.sec-intro .topBox .textLayer {
+        height: 10rem;
+        display: block;
+        margin: 0 auto;
+    }
+    .secItem.sec-intro .topBox .textLayer h1 {
+        font-size: 13rem;
+    }
+    .secItem.sec-intro .slideBox .introSwiper .object{
+        right: -5rem;
+    }
+    .secItem.sec-platform .serviceBox .titleBox{
+        flex: 1;
+        align-content: center;
+    }
+    .secItem.sec-platform .serviceBox .serviceList{
+        flex: unset;
+        height: unset;
+    }
+}
+
+
+@media only screen and (max-width:929px) {
+
+    h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    h2 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+    h3 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    .fullpage-wrapper .fp-section{
+        position: unset;
+        visibility: unset;
+        opacity: 1;
+        min-height: fit-content;
+        overflow: hidden;
+        display: block;
+    }
+    .fullpage-wrapper .fp-section > * {
+        display: inherit;
+
+    }
+    
+    
+}
+
+
+@media only screen and (max-width:600px) {
+    html{
+        font-size: 9px;
+    }
+    .size-circle100{
+        width: 80px;
+        height: 80px;
+    }
+
+    footer .wrap.type-flex.topBox{
+        padding-top: 6px !important;
+    }
+    footer .topBox .linkList{
+        padding: 0;
+    }
+    footer .topBox .linkList .linkItem{
+        padding-bottom: 6px;
+    }
+    footer .topBox .linkList .linkItem h5 {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    footer .infoBox .sideBox{
+        margin-top: 10px;
+    }
+    footer .infoBox .logoBox .logo{
+        height: 20px;
+        width: 85px;
+    }
+    footer .topBox .sideBox .moreFrame{
+        /* width: 75px; */
+        bottom: 34px;
+    }
+    footer .topBox .sideBox .moreFrame .moreBtn{
+        padding-bottom: 5px;
+    }
+    footer .topBox .sideBox .moreFrame .moreBtn .icon {
+        width: 10px;
+        height: 10px;
+        top: 5px;
+    }
+}
+
+@media (orientation: landscape )  {
+    
+    @media only screen and (max-height:500px) {
+
+        .secItem{
+            height: 100% !important;
+        }
+
+        .secItem.sec-buildit,
+        .secItem.sec-buildit > .fp-tableCell{
+            height: fit-content !important;
+        }
+        
+        .secItem.sec-platform,
+        .secItem.sec-join > .fp-tableCell,
+        .secItem.sec-platform > .fp-tableCell,
+        .secItem.sec-join{
+            height: 730px !important;
+        }
+        .secItem{
+            position: relative !important;
+        }
+        header .cateItems .cateItem{
+            margin: 0 .5rem;
+
+        }
+        
+        .secItem.sec-slide .sideBox .textBox > *:last-child{
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-break: keep-all;
+             
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }
+        .secItem.sec-join .joinArea .commuItems .commuItem .contactList .contactItem{
+            flex-direction: column;
+        }
+    }
+    @media only screen and (max-width:929px) {
+        /* layout */
+        .fullpage-wrapper .fp-section{
+            position: unset;
+            visibility: unset;
+            opacity: 1;
+            min-height: 600px;
+            overflow: hidden;
+            /* display: table  */
+        }
+        .fullpage-wrapper .fp-section > * {
+            /* display: table-cell ; */
+        }
+        .secItem .fp-tableCell > .wrap{
+            padding-top: unset;
+        }
+        .secItem .fp-tableCell > .wrap {
+            padding: calc((var(--vh, 1vh) * 5)) 0;
+        }
+
+        footer{
+            padding: 0;
+        }
+
+        footer{
+            padding: 0 20px 20px;
+        } 
+
+        footer .wrap.type-flex.infoBox,
+        footer .infoBox .sideBox .wrap.type-flex    {
+            flex-direction: column;
+            text-align: left;
+        }
+        footer .wrap.type-flex.infoBox > * {
+            width: 100%;
+        }
+        footer .wrap.type-flex.topBox{
+            text-align: center;
+        }
+        footer .topBox .linkList {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+        footer .topBox .linkList .linkItem{
+            margin-right: unset;
+        }
+        footer .topBox .sideBox .moreFrame{
+            z-index: 5;
+            position: absolute;
+            right: 20px;
+            bottom: 30px;
+        }
+        footer .topBox .sideBox .moreFrame .moreBtn{
+            padding-bottom: 10px;
+        }
+        footer .infoBox .sideBox{
+            margin-top: 20px;
+        }
+        footer .infoBox .sideBox .wrap.type-flex{
+            gap: 3px !important;
+        }
+        
+        footer .infoBox .sideBox .wrap.type-flex:first-child{
+            margin-bottom: 10px;
+
+        }
+        footer .infoBox .sideBox .wrap.type-flex > *{
+            width: 100%;
+        }
+
+
+        /* custom */
+    }
+}
+@media (orientation: portrait )  {
+        /* layout */
+
+    .fp-tableCell > .wrap.type-flex.direc-row
+    {
+        flex-direction: column;
+    }
+    .fp-tableCell > .wrap.type-flex.size-50p > *{width: 100%;}
+    .fp-tableCell > .wrap.type-flex.size-50p > *:first-child{flex:  unset;height: fit-content;}
+    .fp-tableCell > .wrap.type-flex.size-50p > *:last-child{flex:  1;align-content: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .secItem .fp-tableCell > .wrap{
+        min-height: fit-content;
+    }
+
+
+
+        /* custom */
+
+
+        .secItem.sec-slide .sideBox > .wrap{
+            width: 100%;    
+            margin: 0 auto;
+            max-width: 500px;
+        }
+
+        .secItem.sec-platform .serviceImg{
+            width: 100%;
+        }
+
+        .secItem.sec-news .newsItems .newsItem{
+            
+            width: calc((100% - (1.5rem * 1 )) / 2);
+            height: fit-content;
+        }
+        .secItem.sec-news .newsItems .newsItem:nth-child(3n) {
+            margin-right: 0.5rem;
+        }
+        .secItem.sec-news .newsItems .newsItem:nth-child(2n) {
+            margin-right: unset;
+        }
+        .secItem.sec-news .newsItems .newsItem .descBox{
+            min-height: 130px;
+
+        }
+        .secItem.sec-join .joinArea .commuItems .commuItem{
+            width: 100%;
+            margin-right: unset;
+        }
+        .secItem.sec-join .joinArea .commuItems .commuItem.cont-long{
+            border-radius: 2rem;
+        }
+        .secItem.sec-join .joinArea .commuItems .commuItem > .wrap {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .secItem.sec-join .joinArea .commuItems .commuItem .icon{
+            width: 3rem;
+            height: 3rem;
+            position: unset;
+            transform: unset;
+        }
+        .secItem.sec-join .joinArea .commuItems a > .commuItem h5 {
+            font-weight: 600;
+            font-size: 2rem;
+        }
+        .secItem.sec-join .joinArea .commuItems .coummuLine,
+        .secItem.sec-join .joinArea .commuItems .commuItem.cont-long > .wrap {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .secItem.sec-join .joinArea .commuItems .coummuLine{
+            height: 100%;
+        }
+        .secItem.sec-join .joinArea .commuItems .commuItem.cont-long > .wrap > *{
+            width: 100%;
+        }
+        
+        .secItem.sec-join .joinArea .commuItems{
+            /* display: block; */
+            flex-direction: column;
+        }
+        .secItem.sec-join .joinArea .commuItems .coummuLine{
+            width: 100%;
+            height: fit-content;
+        }
+        .secItem.sec-join .joinArea .commuItems .commuItem .textBox br{
+            display: none;
+        }
+        .secItem.sec-join .joinArea .commuItems .commuItem .contactList .contactItem{
+            margin-top: 5px;
+        }
+        .secItem.sec-join .joinArea .commuItems .coummuLine a,
+        .secItem.sec-join .joinArea .commuItems .commuItem{
+            height: 100%;
+        }
+
+
+    @media only screen and (max-height:930px) {
+        .secItem.sec-platform .serviceImg video{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media only screen and (min-width:930px) {
+        
+          
+        .fp-tableCell{
+            height: calc(var(--vh, 1vh)* 100) !important;
+        }
+
+    }
+    @media only screen and (max-width:929px) {
+        .secItem .fp-tableCell{
+            padding-top: 9rem;
+        }
+        header{
+            height: 5rem;
+        }
+        header .cateItems {
+            bottom: 0;
+            top: unset;
+            transform: translateY(100%);
+            width: calc(100% + 6rem);
+            left: -3rem;
+            text-align: center;
+            height: 4rem;
+            line-height: 3.4rem;
+            padding: 0 3rem ;
+            background: #fff;
+            border: 1px solid #eee;
+            border-left: 0;
+            border-right: 0;
+            overflow-y: hidden;
+            overflow-x: auto;
+        }
+
+        .secItem.sec-intro .topBox {
+            padding: calc((var(--vh, 1vh)* 5) - 5px) 3rem 3rem;
+        }
+        .secItem.sec-intro .slideBox .introSwiper .swiper-slide >.wrap {
+            padding: 3rem;
+        }
+        .secItem.sec-intro .topBox .textLayer {
+            width: fit-content;
+        }
+        .secItem.sec-intro .topBox .textLayer h2{
+            font-size: 3.5rem;
+            font-weight: 800;
+            position: absolute;
+            right: -4px;
+            top: 11px;
+        }
+
+        .secItem.sec-slide .titleBox{
+            height: fit-content;
+            text-align: center;
+        }
+        .secItem.sec-slide .titleBox .textBox{
+            margin:  2.5rem 0;
+        }
+        .secItem.sec-slide .titleBox .textBox > *:last-child{
+            margin-top: 1rem;
+        }
+        .secItem.sec-slide .titleBox .btnBox .btn{
+            margin-top: unset;
+        }
+        .secItem.sec-slide .sideBox{
+            padding: 0 3.5rem 3.5rem;
+        }
+        
+
+
+        .secItem.sec-slide .titleBox,
+        .secItem.sec-buildit > .fp-tableCell > .wrap {
+            padding: calc((var(--vh, 1vh)* 5)) 3.5rem 3.5rem;
+        }
+        .secItem.sec-buildit,
+        .secItem.sec-buildit > .fp-tableCell,
+        .secItem.sec-platform,
+        .secItem.sec-platform > .fp-tableCell{
+            height: fit-content !important;
+        }
+        .secItem.sec-platform .serviceBox .titleBox {
+            padding: calc((var(--vh, 1vh)* 5)) 3.5rem 3.5rem;
+        }
+        .secItem.sec-platform .serviceBox .serviceList{
+            padding: 3rem;
+        }
+
+
+    }
+    
+    @media only screen and (max-width:600px) {
+        .size-circle60{
+            width: 40px;
+            height: 40px;
+        }
+        .size-circle60 .icon{
+            width: 20px;;
+            height: 20px;
+        }
+        header{
+            padding: 0 2rem;
+        }
+        header .logo{
+            height: 2.5rem;
+        }
+        header .cateItems{
+            width: calc(100% + 4rem);
+            left: -2rem;
+            padding: 0 1.5rem;
+        }
+        header .cateItems .cateItem{
+            margin: 0 0.5rem;
+        }
+        
+        header .cateItems .cateItem h4 {
+            font-size: 1.5rem;
+        }
+        .secItem.sec-intro .topBox{
+            padding: 2rem 2rem 2rem;
+        }
+        .secItem.sec-intro .topBox .topLayer{
+            margin-bottom: unset;
+            height: 4rem;
+        }
+        .secItem.sec-intro .topBox .topLayer > .icon{
+            width: 4rem;
+        }
+        .secItem.sec-intro .topBox .topLayer .linkBox{
+            text-align: right;
+            right: 0;
+            left: unset;
+            transform: unset;
+        }
+        .secItem.sec-intro .topBox .topLayer .linkBox h4{
+            font-size: 1.4rem;
+            margin-bottom: unset;
+            white-space: nowrap            
+        }
+        .secItem.sec-intro .topBox .textLayer{
+            
+            height: 7rem;
+            transform: scale(.48);
+            transform-origin: left center;
+        }
+        .secItem.sec-intro .slideBox{
+            height: 100%;
+        }
+        .secItem.sec-intro .topBox,
+        .secItem.sec-intro .slideBox .introSwiper .swiper-slide{
+            border-radius: 3rem;
+        }
+        .secItem.sec-intro .slideBox .introSwiper .swiper-slide >.wrap{
+            padding: 2rem;
+        }
+        .secItem.sec-intro .slideBox .introSwiper .swiper-slide .contentBox .textBox{
+            flex: unset;
+            margin-bottom: 1.5rem;
+        }
+        .secItem.sec-intro .slideBox .introSwiper .swiper-slide .contentBox .textBox h5{
+            margin-top: 0.5rem;
+        }
+        .secItem.sec-intro .slideBox .introSwiper .swiper-slide .contentBox .btnBox .btn{
+            padding: 0 10px;
+            height: 35px;
+            line-height: 33px;
+        }
+        .secItem.sec-intro .slideBox .introSwiper .object{
+            height: 60%;
+            background-position: top left;
+        }
+        .secItem.sec-intro .slideBox > .btnBox{
+            right: unset;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 2rem;
+        }
+        .secItem.sec-intro .slideBox > .btnBox .btn{
+            margin: 0 5px;
+        }
+
+
+        .secItem.sec-slide .titleBox, 
+        .secItem.sec-buildit > .fp-tableCell > .wrap,
+        .secItem.sec-platform .serviceBox .titleBox {
+            padding: 3rem 2rem;
+        }
+        .secItem.sec-slide .sideBox .textBox > *:last-child{
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-break: keep-all;
+             
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }
+
+        .secItem.sec-slide .sideBox .textBox > *:first-child{
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+        }
+
+        .secItem.sec-buildit > .fp-tableCell > .wrap {
+            border-radius: 3rem 3rem 0px 0px;
+        }
+
+        
+        .secItem.sec-buildit .textBox h5{
+            margin-top: 5px;
+        }
+        
+        .secItem.sec-buildit .textBox h5 br {
+            display: none;
+        }
+        .secItem.sec-buildit .contentBox h1{
+            margin-top: -50px;
+            transform: scale(.37);
+            transform-origin: left center;
+            width: 830px;
+        }
+        
+        .secItem.sec-buildit .contentBox .tierList{
+            flex-direction: column;
+            margin-top: -5rem;
+        }
+        
+
+        .secItem.sec-platform .serviceBox .serviceList{
+            padding: 2rem;
+        }
+        .secItem.sec-platform .serviceBox .serviceList .serviceItems{
+            flex-direction: column;
+        }
+        .secItem.sec-platform .serviceBox .serviceList .serviceItems .serviceItem h4 {
+            margin-bottom: 10px;
+            min-height: unset;
+        }
+        .secItem.sec-platform .serviceBox .serviceList .serviceItems .serviceItem h5{
+            min-height: unset;
+        }
+        .secItem.sec-platform .serviceBox .serviceList .serviceItems .serviceItem .textBox .icon{
+            width: 3rem;
+            height: 3rem;
+        }
+        .secItem.sec-platform .serviceBox .serviceList{
+            max-height: unset;
+            border-radius: 3rem;
+        }
+        .secItem.sec-platform .serviceImg{
+            height: 100px;
+            border-radius: 3rem;
+        }
+
+
+        .secItem.sec-news .newsItems,
+        .secItem.sec-join .joinArea{
+            padding: 0 2rem 2rem;
+        }
+        .secItem.sec-news .newsItems .newsItem{
+            width: 100%;
+            height: fit-content;
+        }
+        .secItem.sec-news .newsItems .newsItem h4{
+            margin-bottom: 1rem;
+        }
+        .secItem.sec-join{
+            min-height: 830px;
+        }
+
+    }
+    @media only screen and (max-width:400px) {
+        
+        h1 {
+            font-size: 2.4rem;
+            line-height: 3rem;
+        }
+        h2 {
+            font-size: 2.4rem;
+            line-height: 3rem;
+        }
+        h3 {
+            font-size: 1.6rem;
+            line-height: 2rem;
+        }
+
+        .secItem.sec-intro .topBox .textLayer{
+            
+            transform: scale(.42);
+        }
+        .secItem.sec-buildit .contentBox h1 {
+            transform: scale(.31);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-height:930px){
+
+    @media only screen and (min-width:1600px) {
+        html{
+            font-size: 12px;
+    
+        }
+      
+    }
+    
+    @media only screen and (min-width:1200px){
+        
+        html{
+            font-size: 11px;
+    
+        }
+    }
+    
+}
+
