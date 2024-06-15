@@ -10,7 +10,8 @@
         /* Custom CSS for specific styles */
         .block-image {
             width: 100%;
-            height: 200px; /* Adjust height as needed */
+            height: 200px;
+            /* Adjust height as needed */
             object-fit: cover;
             border-radius: 8px;
         }
@@ -25,14 +26,16 @@
 <body class="bg-gray-100">
 
     <!-- Header -->
-    <header class="bg-gray-800 text-white flex justify-between items-center px-4 py-2">
-        <div class="text-xl font-bold">EcoCred SCAN</div>
+    <header class="bg-white text-black flex justify-between items-center px-4 py-2">
+        <div><img src="logoo.jpg" alt="logo" height="10" width="100"></div>
         <nav class="flex space-x-4">
             <a href="#" class="hover:text-gray-200">Home</a>
             <a href="#" class="hover:text-gray-200">Chains & Blocks</a>
             <a href="#" class="hover:text-gray-200">Transactions & Vouchers</a>
             <a href="#" class="hover:text-gray-200">Tokens & NFTs & Docs</a>
         </nav>
+        <a href="login.html" id="loginBtn"
+            class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">Login</a>
     </header>
 
     <!-- Main Content -->
@@ -49,7 +52,7 @@
                     class="border rounded-md px-2 py-1 w-full focus:outline-none shadow-sm">
                 <button class="bg-blue-500 text-white px-4 py-1 rounded-md hover:bg-blue-700">Search</button>
             </div>
-            
+
         </div>
 
         <!-- Horizontal Divider -->
@@ -58,25 +61,34 @@
         <!-- Grid Layout -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-        <!-- Card 1 -->
-        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg card-with-text">
-            <h3 class="text-lg font-bold mb-2">Chain ID #1 (Green Credits)</h3>
-            <img src="https://media.istockphoto.com/id/1340519929/photo/concept-depicting-the-issue-of-carbon-dioxide-emissions-and-its-impact-on-nature-in-the-form.jpg?s=612x612&w=0&k=20&c=6u0Q-VfW1YHp1qPRPXw-_zR3VlyZX-8xGuX6lWbd-rA="
-                alt="Neutrality Image" class="block-image rounded-lg">
-        </div>
+            <!-- Card 1 -->
+            <a href="issue.html" class="block">
+                <div class="bg-white p-4 rounded-lg shadow-md hover-scale">
+                    <h3 class="text-lg font-bold mb-2">Chain ID #1 (Green Credits)</h3>
+                    <img src="https://media.istockphoto.com/id/1340519929/photo/concept-depicting-the-issue-of-carbon-dioxide-emissions-and-its-impact-on-nature-in-the-form.jpg?s=612x612&w=0&k=20&c=6u0Q-VfW1YHp1qPRPXw-_zR3VlyZX-8xGuX6lWbd-rA="
+                        alt="Neutrality Image" class="block-image rounded-lg">
+                </div>
+            </a>
 
 
             <!-- Card 2 -->
-            <div class="bg-white p-4 rounded-lg shadow-md hover-scale">
-                <h3 class="text-lg font-bold mb-2">Chain ID #2 (Carbon Emission)</h3>
-                <img src="https://d35frdwcqpifcr.cloudfront.net/sites/default/files/facebook_thumb/istock_smokestacks_1200_x_630.jpeg" alt="Emission Image" class="block-image">
-            </div>
+            <a href="token.html" class="block">
+                <div class="bg-white p-4 rounded-lg shadow-md hover-scale">
+                    <h3 class="text-lg font-bold mb-2">Chain ID #2 (Carbon Emission)</h3>
+                    <img src="https://d35frdwcqpifcr.cloudfront.net/sites/default/files/facebook_thumb/istock_smokestacks_1200_x_630.jpeg"
+                        alt="Emission Image" class="block-image rounded-lg">
+                </div>
+            </a>
+
 
             <!-- Card 3 -->
-            <div class="bg-white p-4 rounded-lg shadow-md hover-scale">
-                <h3 class="text-lg font-bold mb-2">Chain ID #3 (Carbon Offset)</h3>
-                <img src="https://static.vecteezy.com/system/resources/previews/026/953/500/non_2x/net-zero-and-carbon-neutral-concepts-net-zero-emissions-goals-weather-neutral-long-term-strategy-created-with-generative-ai-technology-photo.jpeg" alt="Offset Image" class="block-image">
-            </div>
+            <a href="buyer.html" class="block">
+                <div class="bg-white p-4 rounded-lg shadow-md hover-scale">
+                    <h3 class="text-lg font-bold mb-2">Chain ID #3 (Carbon Offset)</h3>
+                    <img src="https://static.vecteezy.com/system/resources/previews/026/953/500/non_2x/net-zero-and-carbon-neutral-concepts-net-zero-emissions-goals-weather-neutral-long-term-strategy-created-with-generative-ai-technology-photo.jpeg"
+                        alt="Offset Image" class="block-image rounded-lg">
+                </div>
+            </a>
 
             <!-- Last Transactions -->
             <div class="col-span-3">
@@ -124,7 +136,7 @@
                                 <td class="px-4 py-2">0x00000000219...303d7705fa</td>
                                 <td class="px-4 py-2">8 days ago</td>
                             </tr>
-                            
+
 
                         </tbody>
                     </table>

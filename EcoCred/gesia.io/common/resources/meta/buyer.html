@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer/Seller Details - Blockchain Platform</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+
+<body class="bg-gray-50 min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <!-- <nav class="bg-blue-600 p-4 shadow-lg"> -->
+    <!-- <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">Buyer/Seller Details</a>
+        </div>
+    </nav> -->
+
+    <!-- Main Content -->
+    <div class="container mx-auto p-8 flex-grow">
+        <div class="max-w-lg mx-auto bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Select Role</h2>
+            <div class="mb-6 flex justify-center space-x-4">
+                <!-- Buyer Button -->
+                <button id="buyerBtn"
+                    class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition duration-300">Buyer</button>
+                <!-- Seller Button -->
+                <button id="sellerBtn"
+                    class="px-6 py-3 bg-green-600 text-white rounded-lg shadow-md hover:bg-green-700 transition duration-300">Seller</button>
+            </div>
+
+            <!-- Buyer Details Form -->
+            <div id="buyerForm" class="hidden">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Buyer Details</h2>
+                <form class="space-y-4">
+                    <div class="flex flex-col mb-4">
+                        <label for="buyerName" class="block text-gray-700 font-medium mb-2">Name</label>
+                        <input type="text" id="buyerName"
+                            class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+                            placeholder="Enter name">
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <label for="buyerEmail" class="block text-gray-700 font-medium mb-2">Email</label>
+                        <input type="email" id="buyerEmail"
+                            class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+                            placeholder="Enter email">
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <label for="buyerCredits" class="block text-gray-700 font-medium mb-2">Number of Credits</label>
+                        <input type="number" id="buyerCredits"
+                            class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+                            placeholder="Enter number of credits">
+                    </div>
+                    <button id="buyerSubmitBtn" type="button"
+                        class="w-full bg-blue-600 text-white py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">Submit
+                        Buyer Details</button>
+                </form>
+            </div>
+
+
+            <!-- Seller Details Form -->
+            <div id="sellerForm" class="hidden">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Seller Details</h2>
+                <form class="space-y-4">
+                    <div class="flex flex-col mb-4">
+                        <label for="sellerName" class="block text-gray-700 font-medium mb-2">Name</label>
+                        <input type="text" id="sellerName"
+                            class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:border-green-300"
+                            placeholder="Enter name">
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <label for="sellerEmail" class="block text-gray-700 font-medium mb-2">Email</label>
+                        <input type="email" id="sellerEmail"
+                            class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:border-green-300"
+                            placeholder="Enter email">
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <label for="buyerCredits" class="block text-gray-700 font-medium mb-2">Number of Credits</label>
+                        <input type="number" id="buyerCredits"
+                            class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+                            placeholder="Enter number of credits">
+                    </div>
+                    <button id="sellerSubmitBtn" type="button"
+                        class="w-full bg-blue-600 text-white py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">Submit
+                        Seller Details</button>
+                </form>
+            </div>
+
+            <script src="contract.js">
+
+            </script>
+</body>
+
+</html>
